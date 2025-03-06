@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>餐廳意見調查表</title>
+</head>
+<body>
+    <h1>餐廳意見調查表</h1>
+    <form action="/test.aspx" method="post">
+        <label for="email">電子郵件：</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="staff">你最喜歡的餐廳類型：</label>
+        <input type="text" id="staff" name="staff"><br><br>
+
+        <label for="flightNumber">你的名字：</label>
+        <input type="text" id="flightNumber" name="flightNumber"><br><br>
+
+        <label for="cuisine">你喜歡哪國料理呢？</label><br>
+        <select id="cuisine" name="cuisine" size="4" multiple>
+            <optgroup label="亞洲料理">
+                <option value="jp">日本料理</option>
+                <option value="kr">韓國料理</option>
+                <option value="cn">中國料理</option>
+            </optgroup>
+            <optgroup label="西式料理">
+                <option value="it">義大利料理</option>
+                <option value="fr">法國料理</option>
+                <option value="us">美式料理</option>
+            </optgroup>
+        </select><br><br>
+
+        <label for="features">你最喜歡的餐廳特色是什麼？</label><br>
+        <select id="features" name="features" size="4" multiple>
+            <option value="service">服務態度</option>
+            <option value="environment">用餐環境</option>
+            <option value="food_quality">食物品質</option>
+            <option value="price">價格合理</option>
+        </select><br><br>
+
+        <label for="notification">其他餐廳建議或備註：</label><br>
+        <textarea id="notification" name="notification" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="提交">
+        <input type="reset" value="重設">
+    </form>
+</body>
+</html>
